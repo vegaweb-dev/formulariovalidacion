@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'roboto', sans-serif;
+    background-color: #e5e5e5;
+}
+
+main{
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+.formulario__label{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.formulario__grupo-input{
+    position: relative;
+}
+
+.formulario__input{
+    width: 100%;
+    background-color: aqua;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px 0 20px;
+    transition: .3s ease all;
+
+}
+
+
+.formulario__input:hover{
+    border: 1px solid red;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(180,180,200,0.7);
+}
+
+.formulario__input-error{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+
+}
+
+.formulario__input-error-activo{
+    display: block;
+}
+
+.input__validacion-estado{
+    position: absolute;
+    right: 5px;
+    bottom: 13px;
+    font-size: 16px;
+    z-index: 200px;
+    opacity: 0.8;
+
+}
+
+
+.formulario__checkbox{
+    margin-right: 10px;
+}
+
+.formulario__grupo,
+.formulario__mensaje,
+.formulario__mensaje-btn-enviar{
+    grid-column: span 2;
+}
+
+.formulario__mensaje{
+    height: 30px;
+    line-height: 30px;
+    background-color: red;
+    padding: 0 15px;
+    border-radius: 3px;
+   /* display: none;*/
+    
+}
+
+.formulario__mensaje-active{
+    display: block;
+    
+}
+
+.formulario__mensaje p{
+    margin:0px;
+    }
+
+.formulario__mensaje-btn-enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+} 
+
+.formulario__btn{
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: blueviolet;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    transition: .1s ease all;
+    border: none;
+    
+}
+
+
+.formulario__btn:hover{
+    box-shadow: 3px 0px 30px rgba(163,163,163,1 );
+    
+}
+
+.formulario__mensaje-exito{
+    font-size: 14px;
+    color: #119200;
+    display: none;
+    
+}
+
+formulario__mensaje-exito-activo{
+    display: block;
+}
